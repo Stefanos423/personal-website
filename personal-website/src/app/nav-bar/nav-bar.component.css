@@ -33,6 +33,10 @@
     margin-top: 10px;
 }
 
+.links a {
+    text-decoration: none;
+}
+
 img {
     margin-left: 4px;
     margin-right: 4px;
