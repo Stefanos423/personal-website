@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { ScrollableInfoComponent } from './scrollable-info/scrollable-info.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BannerComponent } from './banner/banner.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScrollableInfoComponent,
     NavBarComponent,
-    BannerComponent
+    BannerComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

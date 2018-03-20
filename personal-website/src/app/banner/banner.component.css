@@ -1,7 +1,6 @@
 .scrollable-info-container {
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    /* background-image: url('https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/29136909_2121770291437134_7268457196684992690_n.jpg?oh=d1b12aa326f84e5f013c665f66d7ef12&oe=5B2F6D31') fixed center; */
     background-color: blue;
     width: 1340px;
     height: 560px;
@@ -13,7 +12,6 @@ h1 {
     font-size: 3em;
     color: #fff;
     text-transform: uppercase;
-    line-height: 1.4em;
     font-weight: 300;
 }
 
@@ -54,6 +52,7 @@ h1 span {
 }
 
 .navigate-button {
+    color: #fff;
     margin-top: 55px;
     width: 80px;
     height: 80px;
