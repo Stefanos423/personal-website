@@ -1,7 +1,7 @@
 .scrollable-info-container {
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    background-color: blue;
+    background-image: url('https://i0.wp.com/birchtree.me/wp-content/uploads/2016/06/swift-header-1.png?w=1100&ssl=1');
     width: 1340px;
     height: 560px;
 }

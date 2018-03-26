@@ -9,6 +9,7 @@ import { ScrollableInfoComponent } from './scrollable-info/scrollable-info.compo
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BannerComponent } from './banner/banner.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     ScrollableInfoComponent,
     NavBarComponent,
     BannerComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    MySkillsComponent
   ],
   imports: [
     BrowserModule,

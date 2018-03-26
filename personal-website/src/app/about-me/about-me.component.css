@@ -14,14 +14,14 @@
 .details {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .personal-information {
     margin-left: 50px;
     width: 575px;
     height: 500px;
-    background-color: blue;
+    background-image: url('https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/23622298_2063068277307336_8372805077311165436_n.jpg?_nc_cat=0&oh=7223a3eaabf4e2e03b0fc2a4fc54d804&oe=5B36657E');
 }
 
 .cv-abstract {

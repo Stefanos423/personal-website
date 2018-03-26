@@ -1,0 +1,41 @@
+.my-skills-container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 60px;
+    margin-bottom: 0.8em;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+}
+
+.technical-skills-container {
+    width: 50%;
+    height: 520px;
+}
+
+.technical-skills {
+    margin: 50px 10px 10px 70px;
+}
+
+h4 {
+    font-size: 1.6em;
+    color: #232323;
+    letter-spacing: 1px;
+    margin-bottom: 1.4em;
+    padding-bottom: 0em;
+    position: relative;
+}
+
+.my-hobbies-container {
+    width: 50%;
+    height: 520px;
+    background-color: red;
+}
