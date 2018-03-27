@@ -4,23 +4,41 @@
             <button mat-button class='navigate-button' (click)='previousInfo($event)'>
                 <img alt='linkedin-link' src='assets/navigate-before.svg'/>                
             </button>
-            <div id='placeholder' class='w3-animate-right'>
-                <h1 *ngIf='currentInfo === 1'>
+            <div id='placeholder'
+                [@slide]='states[0]'
+                (@slide.done)='slideFinished()'>
+                <h1>
                     My name is <span>Stefanos</span>
                 </h1>
-                <h1 *ngIf='currentInfo === 2'>
-                    I 'm a <span>Developer</span>
-                </h1>
-                <h1 *ngIf='currentInfo === 3'>
-                    Technology is my <span>passion</span>
-                </h1>
-                <div class='text-info' *ngIf='currentInfo === 1'>
+                <div class='text-info'>
                     {{ genericInfo }}
                 </div>
-                <div class = 'text-info' *ngIf='currentInfo === 2'>
+                <div class='contact'>
+                    <button mat-raised-button color='primary' class='contact-buttons'>Hire Me</button>
+                    <button mat-raised-button color='primary' class='contact-buttons'>Contact Me</button>
+                </div>
+            </div>
+            <div id='placeholder'
+                [@slide]='states[1]'
+                (@slide.done)='slideFinished()'>
+                <h1>
+                    I 'm a <span>Developer</span>
+                </h1>
+                <div class = 'text-info'>
                     {{ education }}
                 </div>
-                <div class = 'text-info' *ngIf='currentInfo === 3'>
+                <div class='contact'>
+                    <button mat-raised-button color='primary' class='contact-buttons'>Hire Me</button>
+                    <button mat-raised-button color='primary' class='contact-buttons'>Contact Me</button>
+                </div>
+            </div>
+            <div id='placeholder'
+                [@slide]='states[2]'
+                (@slide.done)='slideFinished()'>
+                <h1>
+                    Technology is my <span>passion</span>
+                </h1>
+                <div class = 'text-info'>
                     {{ passion }}
                 </div>
                 <div class='contact'>
