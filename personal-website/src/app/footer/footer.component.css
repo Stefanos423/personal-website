@@ -11,13 +11,13 @@
 
 button {
   position: relative;
+  color: #fff;
   width: 40px;
   height: 40px;
   bottom: 20px;
 }
 
 img {
-  color: #ffffff;
   width: 30px;
   height: 30px;
 }
