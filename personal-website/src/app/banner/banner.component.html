@@ -5,8 +5,8 @@
                 <img alt='linkedin-link' src='assets/navigate-before.svg'/>                
             </button>
             <div id='placeholder'
-                [@slideRight]='states[0]'
-                (@slideRight.done)='slideRightFinished()'>
+                [@slide]='states[0]'
+                (@slide.done)='slideFinished()'>
                 <h1>
                     My name is <span>Stefanos</span>
                 </h1>
@@ -19,8 +19,8 @@
                 </div>
             </div>
             <div id='placeholder'
-                [@slideRight]='states[1]'
-                (@slideRight.done)='slideRightFinished()'>
+                [@slide]='states[1]'
+                (@slide.done)='slideFinished()'>
                 <h1>
                     I 'm a <span>Developer</span>
                 </h1>
@@ -33,8 +33,8 @@
                 </div>
             </div>
             <div id='placeholder'
-                [@slideRight]='states[2]'
-                (@slideRight.done)='slideRightFinished()'>
+                [@slide]='states[2]'
+                (@slide.done)='slideFinished()'>
                 <h1>
                     Technology is my <span>passion</span>
                 </h1>

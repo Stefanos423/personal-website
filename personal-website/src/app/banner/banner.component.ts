@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { slideRight, slideLeft } from '../animations/slide.animation';
+import { slide } from '../animations/slide.animation';
 
 @Component({
   selector: 'banner',
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.css'],
-  animations: [ slideRight, slideLeft ]
+  animations: [ slide ]
 })
 export class BannerComponent implements OnInit {
 
@@ -68,11 +68,7 @@ export class BannerComponent implements OnInit {
     }
   }
 
-  slideRightFinished() {
-    this.animating = false;
-  }
-
-  slideLeftFinished() {
+  slideFinished() {
     this.animating = false;
   }
 }
