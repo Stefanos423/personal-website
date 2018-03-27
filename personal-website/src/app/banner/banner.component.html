@@ -4,7 +4,11 @@
             <button mat-button class='navigate-button' (click)='previousInfo($event)'>
                 <img alt='linkedin-link' src='assets/navigate-before.svg'/>                
             </button>
-            <div id='placeholder' class='w3-animate-right'>
+            <div id='placeholder'
+                [@slideRight]='rightState'
+                (@slideRight.done)='slideRightFinished()'
+                [@slideLeft]='leftState'
+                (@slideLeft.done)='slideLeftFinished()'>
                 <h1 *ngIf='currentInfo === 1'>
                     My name is <span>Stefanos</span>
                 </h1>
