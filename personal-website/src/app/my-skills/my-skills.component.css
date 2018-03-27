@@ -21,7 +21,7 @@
     height: 520px;
 }
 
-.technical-skills {
+.panes {
     margin: 50px 10px 10px 70px;
 }
 
@@ -34,8 +34,69 @@ h4 {
     position: relative;
 }
 
-.my-hobbies-container {
+h4:after {
+    position: absolute;
+    content: '';
+    background: #1cc7d0;
+    width: 20%;
+    height: 2px;
+    left: 1%;
+    bottom: -40%;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #333;
+    line-height: 28px;
+    margin-bottom: 3em;
+}
+
+.progress-bars {
+    width: 94%;
+}
+
+mat-progress-bar {
+    height: 25px;
+}
+
+.progress-bar {
+    margin-bottom: 10px;
+}
+
+.my-services-container {
     width: 50%;
     height: 520px;
-    background-color: red;
+}
+
+.service-icons {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-icon {
+    width: 33%;
+}
+
+.service-icon img {
+    height: 48px;
+    width: 48px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.text {
+    display: inline-block;
+    text-align: center;
 }

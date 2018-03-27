@@ -4,14 +4,102 @@
   </div>
   <div class='skills'>
     <div class='technical-skills-container'>
-      <div class='technical-skills'>
+      <div class='panes'>
         <h4>
           Technical skills
         </h4>
+        <p>
+          {{ technicalSkills }}
+        </p>
+        <div class='progress-bars'>
+          <div class='progress-bar'>
+            Javascript
+            <mat-progress-bar
+              [color]="'primary'"
+              [mode]="'determinate'"
+              [value]="90"
+              [bufferValue]="0">
+            </mat-progress-bar>
+          </div>
+          <div class='progress-bar'>
+            C#
+            <mat-progress-bar
+              [color]="'primary'"
+              [mode]="'determinate'"
+              [value]="80"
+              [bufferValue]="0">
+            </mat-progress-bar>
+          </div>
+          <div class='progress-bar'>
+            Angular 2+
+            <mat-progress-bar
+              [color]="'primary'"
+              [mode]="'determinate'"
+              [value]="85"
+              [bufferValue]="0">
+            </mat-progress-bar>
+          </div>
+          <div class='progress-bar'>
+            Software Design and Methodologies
+            <mat-progress-bar
+              [color]="'primary'"
+              [mode]="'determinate'"
+              [value]="75"
+              [bufferValue]="0">
+            </mat-progress-bar>
+          </div>
+        </div>
       </div>
     </div>
-    <div class='my-hobbies-container'>
-
+    <div class='my-services-container'>
+      <div class='panes'>
+        <h4>
+            My Services
+        </h4>
+        <p>
+          {{ services }}
+        </p>
+        <div class='services-icons'>
+          <span class='service-icon'>
+            <div class="service">
+                <img alt='development' src='assets/development.svg'/>
+                <span class='text'>DEVELOPMENT</span>
+            </div>
+          </span>
+          <span class='service-icon'>
+            <div class="service">
+              <div class="service">
+                <img alt='maths' src='assets/maths.svg'/>
+                <span class='text'>MATHEMATICS</span>
+              </div>
+            </div>
+          </span>
+          <span class='service-icon'>
+            <div class="service">
+              <img alt='programming' src='assets/programming.svg'/>
+              <span class='text'>PROGRAMMING</span>
+            </div>
+          </span>
+          <span class='service-icon'>
+            <div class="service">
+              <img alt='electronics' src='assets/electronics.svg'/>
+              <span class='text'>ELETRONICS</span>
+            </div>
+          </span>
+          <span class='service-icon'>
+            <div class="service">
+              <img alt='machineLearning' src='assets/machineLearning.svg'/>
+              <span class='text'>AI/ML</span>
+            </div>
+          </span>
+          <span class='service-icon'>
+            <div class="service">
+              <img alt='physics' src='assets/physics.svg'/>
+              <span class='text'>PHYSICS</span>
+            </div>
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

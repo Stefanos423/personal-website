@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatProgressBarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 import { AppComponent } from './app.component';
 import { ScrollableInfoComponent } from './scrollable-info/scrollable-info.component';
@@ -23,6 +24,8 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    SlideshowModule,
+    MatProgressBarModule,
     MatButtonModule
   ],
   providers: [],
