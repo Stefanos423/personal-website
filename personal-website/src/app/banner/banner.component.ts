@@ -26,7 +26,7 @@ export class BannerComponent implements OnInit {
 
   ngOnInit() { }
 
-  nextInfo(event: any) {
+  nextInfo() {
     if (this.animating) { return; }
     this.animating = true;
     if (this.currentInfo === 1) {
