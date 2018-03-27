@@ -48,8 +48,19 @@ export class BannerComponent implements OnInit {
   previousInfo() {
     if (this.animating) { return; }
     this.animating = true;
-    // this.leftState = 'onTheLeft';
-    // this.rightState = 'onTheCenter';
+    if (this.currentInfo === 1) {
+      this.states[0] = 'onTheLeft';
+      this.states[1] = 'onTheRight';
+      this.states[2] = 'onTheCenter';
+    } else if (this.currentInfo === 2) {
+      this.states[0] = 'onTheCenter';
+      this.states[1] = 'onTheLeft';
+      this.states[2] = 'onTheRight';
+    } else if (this.currentInfo === 3) {
+      this.states[0] = 'onTheRight';
+      this.states[1] = 'onTheCenter';
+      this.states[2] = 'onTheLeft';
+    }
     if (this.currentInfo === 1) {
       this.currentInfo = 3;
     } else {

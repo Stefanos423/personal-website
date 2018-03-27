@@ -48,16 +48,22 @@ export let slideLeft = trigger('slideLeft', [
 
   state('onTheRight', style({
     display: 'none',
+    position: 'absolute',
+    zIndex: '100',
     transform: 'translateX(250%)',
   })),
 
   state('onTheCenter', style({
     opacity: 1,
+    position: 'relative',
+    zIndex: '100',
     transform: 'translateX(0)',
   })),
 
   state('onTheCenter', style({
     display: 'none',
+    position: 'absolute',
+    zIndex: '100',
     transform: 'translateX(-250%)',
   })),
 
