@@ -5,26 +5,40 @@
                 <img alt='linkedin-link' src='assets/navigate-before.svg'/>                
             </button>
             <div id='placeholder'
-                [@slideRight]='rightState'
-                (@slideRight.done)='slideRightFinished()'
-                [@slideLeft]='leftState'
-                (@slideLeft.done)='slideLeftFinished()'>
-                <h1 *ngIf='currentInfo === 1'>
+                [@slideRight]='states[0]'
+                (@slideRight.done)='slideRightFinished()'>
+                <h1>
                     My name is <span>Stefanos</span>
                 </h1>
-                <h1 *ngIf='currentInfo === 2'>
-                    I 'm a <span>Developer</span>
-                </h1>
-                <h1 *ngIf='currentInfo === 3'>
-                    Technology is my <span>passion</span>
-                </h1>
-                <div class='text-info' *ngIf='currentInfo === 1'>
+                <div class='text-info'>
                     {{ genericInfo }}
                 </div>
-                <div class = 'text-info' *ngIf='currentInfo === 2'>
+                <div class='contact'>
+                    <button mat-raised-button color='primary' class='contact-buttons'>Hire Me</button>
+                    <button mat-raised-button color='primary' class='contact-buttons'>Contact Me</button>
+                </div>
+            </div>
+            <div id='placeholder'
+                [@slideRight]='states[1]'
+                (@slideRight.done)='slideRightFinished()'>
+                <h1>
+                    I 'm a <span>Developer</span>
+                </h1>
+                <div class = 'text-info'>
                     {{ education }}
                 </div>
-                <div class = 'text-info' *ngIf='currentInfo === 3'>
+                <div class='contact'>
+                    <button mat-raised-button color='primary' class='contact-buttons'>Hire Me</button>
+                    <button mat-raised-button color='primary' class='contact-buttons'>Contact Me</button>
+                </div>
+            </div>
+            <div id='placeholder'
+                [@slideRight]='states[2]'
+                (@slideRight.done)='slideRightFinished()'>
+                <h1>
+                    Technology is my <span>passion</span>
+                </h1>
+                <div class = 'text-info'>
                     {{ passion }}
                 </div>
                 <div class='contact'>

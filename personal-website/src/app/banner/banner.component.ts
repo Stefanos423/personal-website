@@ -18,28 +18,38 @@ export class BannerComponent implements OnInit {
              Where others are satisfied with cutting-edge, I want to do bleeding-edge.`;
   currentInfo = 1;
 
-  rightState = 'collapsed';
-  leftState = 'collapsed';
+  states = ['onTheCenter', 'onTheLeft', 'onTheRight'];
+
   animating = false;
 
   constructor() { }
 
-  ngOnInit() {
-    this.rightState = 'expanded';
-    this.leftState = 'expanded';
-  }
+  ngOnInit() { }
 
   nextInfo(event: any) {
     if (this.animating) { return; }
     this.animating = true;
-    this.rightState = 'expanded';
+    if (this.currentInfo === 1) {
+      this.states[0] = 'onTheRight';
+      this.states[1] = 'onTheCenter';
+      this.states[2] = 'onTheLeft';
+    } else if (this.currentInfo === 2) {
+      this.states[0] = 'onTheLeft';
+      this.states[1] = 'onTheRight';
+      this.states[2] = 'onTheCenter';
+    } else if (this.currentInfo === 3) {
+      this.states[0] = 'onTheCenter';
+      this.states[1] = 'onTheLeft';
+      this.states[2] = 'onTheRight';
+    }
     this.currentInfo = this.currentInfo % 3 + 1;
   }
 
   previousInfo() {
     if (this.animating) { return; }
     this.animating = true;
-    this.leftState = 'expanded';
+    // this.leftState = 'onTheLeft';
+    // this.rightState = 'onTheCenter';
     if (this.currentInfo === 1) {
       this.currentInfo = 3;
     } else {
@@ -48,12 +58,10 @@ export class BannerComponent implements OnInit {
   }
 
   slideRightFinished() {
-    this.rightState = 'collapsed';
     this.animating = false;
   }
 
   slideLeftFinished() {
-    this.leftState = 'collapsed';
     this.animating = false;
   }
 }

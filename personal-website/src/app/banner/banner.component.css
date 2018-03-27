@@ -8,6 +8,11 @@
     height: 560px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     width: 600px;
     text-align: center;
@@ -54,6 +59,7 @@ h1 span {
 }
 
 .navigate-button {
+    position: relative;
     color: #fff;
     margin-top: 55px;
     width: 80px;

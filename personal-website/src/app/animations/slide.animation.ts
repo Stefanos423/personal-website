@@ -14,30 +14,58 @@ import {
 
 export let slideRight = trigger('slideRight', [
 
-  state('collapsed', style({
-      transform: 'translateX(-250%)',
+  state('onTheLeft', style({
+    display: 'none',
+    position: 'absolute',
+    zIndex: '100',
+    transform: 'translateX(-250%)',
   })),
 
-  state('expanded', style({
-      transform: 'translateX(0)',
+  state('onTheCenter', style({
+    opacity: 1,
+    position: 'relative',
+    zIndex: '100',
+    transform: 'translateX(0)',
   })),
 
-  transition('collapsed => expanded', [
-      animate('0.8s ease-in-out')
-  ])
+  state('onTheRight', style({
+    display: 'none',
+    position: 'absolute',
+    zIndex: '100',
+    transform: 'translateX(250%)',
+  })),
+
+  transition('onTheLeft => onTheCenter', [
+      animate('1.5s ease-in-out')
+  ]),
+
+  transition('onTheCenter => onTheRight', [
+    animate('1.5s ease-in-out')
+  ]),
 ]);
 
 export let slideLeft = trigger('slideLeft', [
 
-  state('collapsed', style({
-      transform: 'translateX(250%)',
+  state('onTheRight', style({
+    display: 'none',
+    transform: 'translateX(250%)',
   })),
 
-  state('expanded', style({
-      transform: 'translateX(0)',
+  state('onTheCenter', style({
+    opacity: 1,
+    transform: 'translateX(0)',
   })),
 
-  transition('collapsed => expanded', [
-      animate('0.8s ease-in-out')
+  state('onTheCenter', style({
+    display: 'none',
+    transform: 'translateX(-250%)',
+  })),
+
+  transition('onTheRight => onTheCenter', [
+    animate('1.5s ease-in-out')
+  ]),
+
+  transition('onTheCenter => onTheLeft', [
+    animate('1.5s ease-in-out')
   ])
 ]);
