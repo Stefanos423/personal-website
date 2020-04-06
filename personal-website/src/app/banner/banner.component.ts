@@ -10,10 +10,10 @@ import { slide } from '../animations/slide.animation';
 })
 export class BannerComponent implements OnInit {
 
-  genericInfo = `Born and raised in Athens, Greece, and recently moved to Northern Ireland, UK,
+  genericInfo = `Born and raised in Athens, Greece, and currently living in Northern Ireland,
                  I am constantly seeking for new challenges and experiences to broaden my professional and personal knowledge.`;
   education = `With a Bachellor\'s in Electrical and Computer Engineering and a Master\'s in Computer Engineering,
-               I am currently working as an Associate Software Developer for Philips Digital Pathology Belfast.`;
+               I am currently working as a Software Developer for Philips Digital Pathology Belfast.`;
   passion = `Be it software or hardware, all fields of Computer Engineering belong in my direct interests.
              Where others are satisfied with cutting-edge, I want to do bleeding-edge.`;
   currentInfo = 1;
