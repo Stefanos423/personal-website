@@ -18,17 +18,14 @@
 }
 
 .personal-information {
-    width: 575px;
-    height: 575px;
+    width: 40%;
     background-image: url('../../assets/profile.jpg');
-    background-size: 575px 575px;
+    background-size: 75%;
+    background-repeat: no-repeat;
 }
 
 .cv-abstract {
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 675px;
-    height: 540px;
+    width: 35%;
     display: flex;
     flex-direction: column;
 }
@@ -58,26 +55,6 @@
 .information {
     display: flex;
     flex-direction: column;
-    margin: 80px 20px 80px 40px;
     color: #fff;
-}
-
-.field-name {
-    font-weight: bold;
-    color: #00bce4;
-}
-
-.field {
-    color: #00bce4;
-}
-
-.row {
-    margin-bottom: 10px;
-}
-
-.contact-buttons {
-    margin-right: 10px;
-    margin-left: 10px;
-    width: 122px;
-    height: 43px;
+    height: 575px;
 }
