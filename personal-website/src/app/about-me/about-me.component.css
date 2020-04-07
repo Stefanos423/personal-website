@@ -18,10 +18,10 @@
 }
 
 .personal-information {
-    margin-left: 50px;
     width: 575px;
-    height: 500px;
-    background-image: url('https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/23622298_2063068277307336_8372805077311165436_n.jpg?_nc_cat=0&oh=7223a3eaabf4e2e03b0fc2a4fc54d804&oe=5B36657E');
+    height: 575px;
+    background-image: url('../../assets/profile.jpg');
+    background-size: 575px 575px;
 }
 
 .cv-abstract {
@@ -64,6 +64,11 @@
 
 .field-name {
     font-weight: bold;
+    color: #00bce4;
+}
+
+.field {
+    color: #00bce4;
 }
 
 .row {
