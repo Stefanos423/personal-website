@@ -67,34 +67,52 @@ mat-progress-bar {
     width: 50%;
 }
 
-.service-icons {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.service-icon {
-    width: 33%;
-}
-
-.service-icon img {
-    height: 48px;
-    width: 48px;
-    margin-right: 60px;
-    margin-left: 60px;
-    margin-top: 30px;
-}
-
-.service {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
 .text {
     display: inline-block;
     text-align: center;
 }
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.date {
+    width: 40%;
+    color: #1cc7d0;
+}
+
+::ng-deep mat-divider {
+    width: 95%;
+    padding-top: 3em;
+}
+
+::ng-deep mat-list {
+    padding-top: 3em;
+}
+
+a {
+    color: #1cc7d0;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: black;
+  }
+  
+  a:visited {
+    color: purple;
+  }

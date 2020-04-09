@@ -71,4 +71,8 @@ export class BannerComponent implements OnInit {
   slideFinished() {
     this.animating = false;
   }
+
+  scrollToBottom() {
+    window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: 'smooth' });
+  }
 }

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatProgressBarModule } from '@angular/material';
+import { MatButtonModule, MatProgressBarModule, MatListModule, MatDividerModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {SlideshowModule} from 'ng-simple-slideshow';
@@ -21,14 +21,16 @@ import { FooterComponent } from './footer/footer.component';
     BannerComponent,
     AboutMeComponent,
     MySkillsComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     SlideshowModule,
     MatProgressBarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

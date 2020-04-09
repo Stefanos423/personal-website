@@ -36,18 +36,18 @@ export let slide = trigger('slide', [
   })),
 
   transition('onTheLeft => onTheCenter', [
-      animate('1.5s ease-in-out')
+      animate('1.0s ease-in-out')
   ]),
 
   transition('onTheCenter => onTheRight', [
-    animate('1.5s ease-in-out')
+    animate('1.0s ease-in-out')
   ]),
 
   transition('onTheRight => onTheCenter', [
-    animate('1.5s ease-in-out')
+    animate('1.0s ease-in-out')
   ]),
 
   transition('onTheCenter => onTheLeft', [
-    animate('1.5s ease-in-out')
+    animate('1.0s ease-in-out')
   ])
 ]);

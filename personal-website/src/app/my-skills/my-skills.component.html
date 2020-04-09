@@ -1,12 +1,12 @@
 <div class='my-skills-container'>
   <div style='text-align: center'>
-    <h3 class='header'>My skills</h3>      
+    <h3 class='header'>Technical background</h3>      
   </div>
   <div class='skills'>
     <div class='technical-skills-container'>
       <div class='panes'>
         <h4>
-          Technical skills
+          My skills
         </h4>
         <p>
           {{ technicalSkills }}
@@ -84,11 +84,103 @@
     <div class='my-services-container'>
       <div class='panes'>
         <h4>
-            My Services
+            My path
         </h4>
-        <p>
-          {{ services }}
-        </p>
+        <div class='buttons'>
+          <button mat-raised-button color='primary' (click)="this.category = 'career'">Career</button>
+          <button mat-raised-button color='primary' (click)="this.category = 'education'">Education</button>
+          <button mat-raised-button color='primary' (click)="this.category = 'projects'">Projects</button>
+        </div>
+        <mat-list *ngIf="category === 'career'">
+          <mat-list-item>
+            <div class='list-item'>
+              <div class='date'>09/2019-Present</div>
+              <div>Software Developer, Philips Digital Pathology Belfast</div>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <div class='list-item'>
+              <div class='date'>06/2018-08/2019</div>
+              <div>Graduate Software Developer, Philips Digital Pathology Belfast</div>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <div class='list-item'>
+              <div class='date'>08/2017-05/2018</div>
+              <div>Associate Software Developer, Philips Digital Pathology Belfast</div>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          If you want to learn more about that, why don't we have a chat? My email is stargirio2@yahoo.gr!
+        </mat-list>
+        <mat-list *ngIf="category === 'education'">
+          <mat-list-item>
+            <div class='list-item'>
+              <div class='date'>03/2014–03/2018</div>
+              <div>Master in Engineering (MEng), Computer Engineering</div>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <div class='list-item'>
+              <div class='date'>09/2012–03/2014</div>
+              <div>Bachelor Degree in Electrical And Computer Engineering</div>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <div class='list-item'>
+              <div class='date'>08/2016</div>
+              <div>Certificate of Participation at the Lisbon Game Sprint 2016</div>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          If you want to learn more about that, why don't we have a chat? My email is stargirio2@yahoo.gr!
+        </mat-list>
+        <mat-list *ngIf="category === 'projects'">
+          <mat-list-item>
+            <div class='list-item'>
+              <a target='_blank' href='https://www.philips.co.uk/healthcare/education-resources/publications/hotspot/intellisite-tissue-mark'>
+                <div>Philips TissueMark</div>
+              </a>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <div class='list-item'>
+              <a target='_blank' href='https://www.philips.co.uk/healthcare/product/HCPATHXL03/xplore-hub-for-research-and-drug-discovery/overview'>
+                <div>Philips Xplore</div>
+              </a>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <div class='list-item'>
+              <a target='_blank' href='https://stefanos423.github.io/marvel-lcg-randomizer'>
+                <div>Marvel LCG Randomizer</div>
+              </a>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <div class='list-item'>
+              <a target='_blank' href='https://stefanos423.github.io/personal-website'>
+                <div>Personal Website</div>
+              </a>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <div class='list-item'>
+              <a target='_blank' href='https://stefanos423.github.io/portfolio-site'>
+                <div>Artist Portfolio Template</div>
+              </a>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
       </div>
     </div>
   </div>
